@@ -1,0 +1,13 @@
+
+/* imported from the kernel source tree */
+#include "asm/unistd.h"
+
+/* for syscall() */
+#include <unistd.h>
+
+
+
+int gettid(void)
+{
+	return syscall(__NR_gettid);
+}
